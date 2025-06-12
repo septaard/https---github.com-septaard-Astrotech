@@ -346,4 +346,33 @@ section.about, section.advantages, section.reviews {
 }
  body.modal-open {
   overflow: hidden;
-} 
+} .modal {
+  display: none; /* Mengubah dari flex menjadi none */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.593);
+  background-color: rgba(0,0,0,0.4);
+  display: flex; /* Baris ini perlu diubah atau dihapus */
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  display: none; /* Pastikan ini yang aktif */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.593);
+  background-color: rgba(0,0,0,0.4);
+  /* Hapus atau komentari baris display: flex; jika ada duplikat */
+  justify-content: center;
+  align-items: center;
+}
